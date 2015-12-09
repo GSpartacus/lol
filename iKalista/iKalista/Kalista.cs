@@ -1,42 +1,14 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="Kalista.cs" company="LeagueSharp">
-//   Copyright (C) 2015 LeagueSharp
-//   
-//             This program is free software: you can redistribute it and/or modify
-//             it under the terms of the GNU General Public License as published by
-//             the Free Software Foundation, either version 3 of the License, or
-//             (at your option) any later version.
-//   
-//             This program is distributed in the hope that it will be useful,
-//             but WITHOUT ANY WARRANTY; without even the implied warranty of
-//             MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//             GNU General Public License for more details.
-//   
-//             You should have received a copy of the GNU General Public License
-//             along with this program.  If not, see <http://www.gnu.org/licenses/>.
-// </copyright>
-// <summary>
-//   An Assembly for <see cref="Kalista" /> okay
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-namespace IKalista
+using System;
+using System.Linq;
+using EloBuddy;
+using EloBuddy.SDK;
+using EloBuddy.SDK.Enumerations;
+using EloBuddy.SDK.Events;
+using EloBuddy.SDK.Rendering;
+using EloBuddy.SDK.Utils;
+
+namespace Kalista.Gladiadora
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Diagnostics.CodeAnalysis;
-    using System.Linq;
-
-    using LeagueSharp;
-    using LeagueSharp.Common;
-
-    using SharpDX;
-
-    using Collision = LeagueSharp.Common.Collision;
-    using Color = System.Drawing.Color;
-
-    /// <summary>
-    ///     An Assembly for <see cref="Kalista" /> okay
-    /// </summary>
     public class Kalista
     {
         #region Static Fields
@@ -644,7 +616,7 @@ namespace IKalista
         /// </summary>
         private void InitMenu()
         {
-            this.menu = new MenuWrapper("iKalista");
+            this.menu = new MenuWrapper("Kalista.Gladiadora");
 
             var comboMenu = this.menu.MainMenu.AddSubMenu("Combo Options");
             {
